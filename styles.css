@@ -14,11 +14,12 @@
 }
 
 body{
-  margin: 20px;
+  margin: 30px;
   font-family: 'League Spartan', sans-serif;
   
 }
 
+@media screen and (max-width: 375px) {
 
     .hero h1{
         color: var(--darkmagenta);
@@ -44,7 +45,7 @@ body{
     .profile{
       margin-top: 50px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       gap:20px;
     }
 
@@ -80,15 +81,122 @@ body{
     .details .highlight{
       color: var(--softpink)
     }
-
-@media screen and (max-width: 375px) {
-
-  .profile{
-    display: flex;
-    flex-direction: column;
-  }
-
-
 }
 
 
+@media screen and (min-width: 375px) {
+
+  .hero{
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .hero h1{
+    color: var(--darkmagenta);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: left;
+}
+.herodetails{
+  color:var(--darkmagenta);
+  font-size: 1.3rem;
+}
+
+.leftsection{
+  width:40%;
+}
+
+.rightsection{
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-left: 50px;
+}
+.rightsection .rating{
+  margin-left: 50px;
+}
+.rating{
+  margin-top: 50px;
+}
+
+.rating div,p{
+  display: inline;
+
+}
+.rating p{
+    margin-left: 40px;
+    color: var(--darkmagenta);
+    font-weight: bold;
+}
+
+.rating-2{
+  padding-left: 40px;
+}
+
+.rating-3{
+  padding-left: 80px;
+}
+
+.stars img{
+  padding-right: 10px;
+}
+
+.profile{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  height: fit-content;
+  justify-content:flex-start;
+  
+}
+
+.testimonial{
+  border-radius: 5px;
+  padding: 30px;
+  background-color: var(--darkmagenta);
+  color: white;
+  height: 200px;
+  width: 300px;
+  
+}
+
+.author{
+  display: flex;
+  align-items: center;
+
+}
+.author-1{
+  margin-bottom: 30px;
+}
+.author-2{
+  margin-top: 30px;
+}
+
+.author-3{
+  margin-top: 60px;
+}
+.author img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.details{
+  padding: 20px;
+}
+
+.details p{
+  display: block;
+  margin: 2px 0 0 0;
+  font-size: 16px;
+}
+
+.details .highlight{
+  color: var(--softpink);
+}
+
+}
